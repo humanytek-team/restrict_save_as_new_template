@@ -5,9 +5,9 @@
     <field name="model">mail.compose.message</field>
     <field name="inherit_id" ref="mail.email_compose_message_wizard_form"/>
     <field name="arch" type="xml">
-      <button name="save_as_template" position="attributes">
+      <xpath expr="//button[@name='save_as_template']" position="attributes">
         <attribute name="groups">base.group_system</attribute>
-      </button>
+      </xpath>
     </field>
   </record>
 </odoo>
